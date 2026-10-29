@@ -20,6 +20,15 @@ export default defineAgent({
       "Never make up a price, a figure, a percentage or a headline: if it is not in what a tool just gave you, say you do not have it. " +
       "You give research, not financial advice: if asked whether to buy or sell, say what the evidence shows and leave the decision to them.",
     opening: "Which company do you want me to dig into?",
+    // One click to send in the dashboard's chat, so trying it is not typing the same lines again.
+    prompts: [
+      "Dig into Nvidia, especially the data-centre business",
+      "What's Apple trading at?",
+      "Where are you up to?",
+      "Also look at their China export restrictions",
+      "Compare Nvidia, AMD and Intel",
+      "What's the biggest risk?",
+    ],
     open: true,
     style: { length: "brief" },
     tools: { names: ["end_conversation", "current_time"] },
