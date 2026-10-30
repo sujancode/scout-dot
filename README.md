@@ -28,12 +28,12 @@ first), and open **Test**: they reach the conversations and tasks started after 
 
 ```bash
 cd sdk/examples/scout-dot
-export VOICEAGENT_KEY=va_test_…
-node ../../bin/voiceagent.mjs deploy                                  # to test
-echo "$FINNHUB_KEY" | node ../../bin/voiceagent.mjs vars set FINNHUB_KEY
-echo "$TAVILY_KEY" | node ../../bin/voiceagent.mjs vars set TAVILY_KEY
-node ../../bin/voiceagent.mjs task run research_company company=Nvidia --wait
-node ../../bin/voiceagent.mjs session                                 # what it is doing now
+export POLKA_KEY=va_test_…
+node ../../bin/polka.mjs deploy                                  # to test
+echo "$FINNHUB_KEY" | node ../../bin/polka.mjs vars set FINNHUB_KEY
+echo "$TAVILY_KEY" | node ../../bin/polka.mjs vars set TAVILY_KEY
+node ../../bin/polka.mjs task run research_company company=Nvidia --wait
+node ../../bin/polka.mjs session                                 # what it is doing now
 ```
 
 Or talk to it (the link the deploy prints, or Test on the dashboard):

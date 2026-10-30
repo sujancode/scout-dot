@@ -1,4 +1,4 @@
-import { defineTest } from "@voice-agent/sdk";
+import { defineTest } from "polka-cli";
 
 // The front: a quick question it answers itself, research it gives to its skills, and no number
 // it did not look up.

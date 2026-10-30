@@ -3,10 +3,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "deploy": "voiceagent deploy",
-    "dev": "voiceagent dev"
+    "deploy": "polka deploy",
+    "dev": "polka dev"
   },
   "devDependencies": {
-    "@voice-agent/sdk": "^0.1.0"
+    "polka-cli": "^0.1.0"
   }
 }

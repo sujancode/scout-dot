@@ -1,7 +1,7 @@
-import { defineTools, type ToolContext } from "@voice-agent/sdk";
+import { defineTools, type ToolContext } from "polka-cli";
 
 // Scout's sources. Each tool calls a real API with a key from the environment's variables
-// (`voiceagent vars set FINNHUB_KEY`, `… TAVILY_KEY`): no key is ever in this code or in the
+// (`polka vars set FINNHUB_KEY`, `… TAVILY_KEY`): no key is ever in this code or in the
 // deployment. A tool answers in short text (the model reads at most 2 000 characters of it);
 // one that throws tells the model it did not work, and the model carries on without it.
 
@@ -134,7 +134,7 @@ async function finnhub<T>(ctx: ToolContext, path: string, query: Record<string, 
 
 function keyOf(ctx: ToolContext, name: string): string {
   const key = ctx.env[name];
-  if (!key) throw new Error(`${name} is not set: voiceagent vars set ${name}`);
+  if (!key) throw new Error(`${name} is not set: polka vars set ${name}`);
   return key;
 }
 

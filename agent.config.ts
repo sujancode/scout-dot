@@ -1,10 +1,10 @@
-import { defineAgent } from "@voice-agent/sdk";
+import { defineAgent } from "polka-cli";
 
 // Scout, a market-research dot. You talk to its front (by voice, chat, in a Meet or through the
 // API); it answers a quick question itself (a price now) and gives real research to its work
 // session, which reads the market data, the news, the web and Hacker News with the tools in
 // ./tools, and writes a brief or a comparison table you can then talk about.
-// FINNHUB_KEY and TAVILY_KEY are the environment's variables (`voiceagent vars set`).
+// FINNHUB_KEY and TAVILY_KEY are the environment's variables (`polka vars set`).
 export default defineAgent({
   name: "Scout",
   params: {
